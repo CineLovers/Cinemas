@@ -1,8 +1,16 @@
 import {Component} from 'angular2/core';
+import {Image} from './image.interface';
+import {video} from './video.interface';
+import {detailcomponent} from './app/detail.component';
 export class Favori {
   id: number;
   name: string;
+  synopsis: string;
+  images: url;
+  iframe: urlV;
 }
+
+
 @Component({
   selector: 'favori',
   template:`
@@ -13,15 +21,18 @@ export class Favori {
         [class.selected]="favori === selectedFavori"
         (click)="onSelect(favori)">
         <span class="badge">{{favori.id}}</span> {{favori.name}}
+
+
       </li>
     </ul>
     <div *ngIf="selectedFavori">
-      <h2>{{selectedFavori.name}} details!</h2>
-      <div><label>id: </label>{{selectedFavori.id}}</div>
-      <div>
-        <label>name: </label>
-        <input [(ngModel)]="selectedFavori.name" placeholder="name"/>
-      </div>
+ 
+
+ <details>test</details>
+     
+
+
+
     </div>
   `,
   styles:[`
@@ -81,14 +92,11 @@ export class AppComponent {
   onSelect(favori: Favori) { this.selectedFavori = favori; }
 }
 var FAVORIES: Favori[] = [
-  { "id": 11, "name": "Mr. Nice" },
-  { "id": 12, "name": "Narco" },
-  { "id": 13, "name": "Bombasto" },
-  { "id": 14, "name": "Celeritas" },
-  { "id": 15, "name": "Magneta" },
-  { "id": 16, "name": "RubberMan" },
-  { "id": 17, "name": "Dynama" },
-  { "id": 18, "name": "Dr IQ" },
-  { "id": 19, "name": "Magma" },
-  { "id": 20, "name": "Tornado" }
+  { "id": 11, "name": "Star wars 1", "synopsis": "Le star Wars de 2001","url": "images/StarWars1.jpg", "urlV": "http://www.allocine.fr/_video/iblogvision.aspx?cmedia=19259278" },
+  { "id": 12, "name": "Star wars 2", "synopsis": "Test","url": "images/StarWars2.jpg" },
+  { "id": 13, "name": "Star wars 3","synopsis": "Test","url": "images/StarWars3.jpg" },
+  { "id": 14, "name": "Star wars 4","synopsis": "Test","url": "images/StarWars4.jpg" },
+  { "id": 15, "name": "Star wars 5","synopsis": "Test","url": "images/StarWars5.jpg" },
+  { "id": 16, "name": "Star wars 6","synopsis": "Test","url": "images/StarWars6.jpg" },
+  { "id": 17, "name": "Star Wars 7","synopsis": "Test","url": "images/StarWars7.jpg" }
 ];
