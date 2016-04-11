@@ -33,7 +33,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'favori',
-                        template: "\n    <h1>{{title}}</h1>\n    <h2>Here your favori</h2>\n    <ul class=\"favories\">\n      <li *ngFor=\"#favori of favories\"\n        [class.selected]=\"favori === selectedFavori\"\n        (click)=\"onSelect(favori)\">\n        <span class=\"badge\">{{favori.id}}</span> {{favori.name}}\n      </li>\n    </ul>\n    <div *ngIf=\"selectedFavori\">\n      <h2>{{selectedFavori.name}} details!</h2>\n      <div><label>id: </label>{{selectedFavori.id}}</div>\n      <div>\n        <label>name: </label>\n        <input [(ngModel)]=\"selectedFavori.name\" placeholder=\"name\"/>\n      </div>\n    </div>\n  ",
+                        template: "\n    <h1>{{title}}</h1>\n    <h2>Here your favori</h2>\n    <ul class=\"favories\">\n      <li *ngFor=\"#favori of favories\"\n        [class.selected]=\"favori === selectedFavori\"\n        (click)=\"onSelect(favori)\">\n        <span class=\"badge\">{{favori.id}}</span> {{favori.name}}\n      </li>\n    </ul>\n    <div *ngIf=\"selectedFavori\">\n      <h2>movie' s details!</h2>\n      <div><label>id: </label>{{selectedFavori.id}}</div>\n      <div>\n        <label>name: </label>{{selectedFavori.name}}\n       </div>\n       <div>\n       <label>synopsis: </label>{{selectedFavori.synopsis}}\n       </div>\n    </div>\n  ",
                         styles: ["\n    .selected {\n      background-color: #CFD8DC !important;\n      color: white;\n    }\n    .favories {\n      margin: 0 0 2em 0;\n      list-style-type: none;\n      padding: 0;\n      width: 15em;\n    }\n    .favories li {\n      cursor: pointer;\n      position: relative;\n      left: 0;\n      background-color: #EEE;\n      margin: .5em;\n      padding: .3em 0;\n      height: 1.6em;\n      border-radius: 4px;\n    }\n    .favories li.selected:hover {\n      background-color: #BBD8DC !important;\n      color: white;\n    }\n    .favories li:hover {\n      color: #607D8B;\n      background-color: #DDD;\n      left: .1em;\n    }\n    .favories .text {\n      position: relative;\n      top: -3px;\n    }\n    .favories .badge {\n      display: inline-block;\n      font-size: small;\n      color: white;\n      padding: 0.8em 0.7em 0 0.7em;\n      background-color: #607D8B;\n      line-height: 1em;\n      position: relative;\n      left: -1px;\n      top: -4px;\n      height: 1.8em;\n      margin-right: .8em;\n      border-radius: 4px 0 0 4px;\n    }\n  "]
                     }), 
                     __metadata('design:paramtypes', [])
@@ -42,16 +42,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             }());
             exports_1("AppComponent", AppComponent);
             FAVORIES = [
-                { "id": 11, "name": "Mr. Nice" },
-                { "id": 12, "name": "Narco" },
-                { "id": 13, "name": "Bombasto" },
-                { "id": 14, "name": "Celeritas" },
-                { "id": 15, "name": "Magneta" },
-                { "id": 16, "name": "RubberMan" },
-                { "id": 17, "name": "Dynama" },
-                { "id": 18, "name": "Dr IQ" },
-                { "id": 19, "name": "Magma" },
-                { "id": 20, "name": "Tornado" }
+                { "id": 11, "name": "Star wars 1", "synopsis:": "Le star Wars de 2001" },
+                { "id": 12, "name": "Star wars 2", "synopsis:": "Test" },
+                { "id": 13, "name": "Star wars 3", "synopsis:": "Test" },
+                { "id": 14, "name": "Star wars 4", "synopsis:": "Test" },
+                { "id": 15, "name": "Star wars 5", "synopsis:": "Test" },
+                { "id": 16, "name": "Star wars 6", "synopsis:": "Test" },
+                { "id": 17, "name": "Star Wars 7", "synopsis:": "Test" }
             ];
         }
     }
