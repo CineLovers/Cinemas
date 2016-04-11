@@ -16,12 +16,11 @@ import {Image} from './image.interface';
 
     <li *ngFor="#image of images">
       <h2>{{image.title}}</h2>
-      <img src="{{image.url}}" alt="">
+      <img src="{{image.url}}" >
     </li>
-
   </ul>
-
 </div>
+
   `,
     //Styles for the tag
     styles: [`
@@ -95,5 +94,6 @@ var IMAGES: Image[] = [
     { "title": "KungFu Panda 3", "url": "ImageApp/kfp3.jpg" },
     { "title": "DEADPOOL", "url": "ImageApp/deadpool.jpg" },
     { "title": "AVENGER 2", "url": "ImageApp/avenger2.jpg" },
-    { "title": "BATMAN V SUPERMAN", "url": "ImageApp/bvs.jpg" }
+    { "title": "BATMAN V SUPERMAN", "url": "ImageApp/bvs.jpg" },
+    { "title": "Star Wars 7", "url": "ImageApp/sw7.jpg" }
 ];
