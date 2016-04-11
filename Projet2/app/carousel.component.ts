@@ -89,6 +89,7 @@ export class CSSCarouselComponent {
     public images = IMAGES;
 }
 
+
 //IMAGES array implementing Image interface
 var IMAGES: Image[] = [
     { "title": "KungFu Panda 3", "url": "ImageApp/kfp3.jpg" },
