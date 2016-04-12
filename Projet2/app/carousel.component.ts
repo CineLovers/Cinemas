@@ -17,10 +17,9 @@ import {Image} from './image.interface';
     <li *ngFor="#image of images">
       <h2>{{image.title}}</h2>
       <img src="{{image.url}}" >
-    </li>
+
   </ul>
 </div>
-
   `,
     //Styles for the tag
     styles: [`
@@ -47,19 +46,6 @@ import {Image} from './image.interface';
     display:block;
     width:100%;
     max-width:100%;
-}
-.carousel h2{
-    margin-bottom: 0;
-    font-size:1em;
-    padding:1.5em 0.5em 1.5em 0.5em;
-    position:absolute;
-    right:0px;
-    bottom:0px;
-    left:0px;
-    text-align:center;
-    color:#fff;
-    background-color:rgba(0,0,0,0.75);
-    text-transform: uppercase;
 }
 
 @keyframes carousel{
@@ -89,12 +75,11 @@ export class CSSCarouselComponent {
     public images = IMAGES;
 }
 
-
 //IMAGES array implementing Image interface
 var IMAGES: Image[] = [
-    { "title": "KungFu Panda 3", "url": "ImageApp/kfp3.jpg" },
-    { "title": "DEADPOOL", "url": "ImageApp/deadpool.jpg" },
-    { "title": "AVENGER 2", "url": "ImageApp/avenger2.jpg" },
-    { "title": "BATMAN V SUPERMAN", "url": "ImageApp/bvs.jpg" },
-    { "title": "Star Wars 7", "url": "ImageApp/sw7.jpg" }
+    {  "url": "ImageApp/kfp3.jpg" },
+    {  "url": "ImageApp/deadpool.jpg" },
+    {  "url": "ImageApp/avenger2.jpg" },
+    {  "url": "ImageApp/bvs.jpg"},
+    {  "url": "ImageApp/sw7.jpg" }
 ];
