@@ -29,9 +29,9 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         //Name of our tag
                         selector: 'css-carousel',
                         //Template for the tag
-                        template: "\n <div class=\"carousel\">\n\n  <ul class=\"slides\">\n\n    <li *ngFor=\"#image of images\">\n      <h2>{{image.title}}</h2>\n      <img src=\"{{image.url}}\" >\n    </li>\n  </ul>\n</div>\n\n  ",
+                        template: "\n <div class=\"carousel\">\n\n  <ul class=\"slides\">\n\n    <li *ngFor=\"#image of images\">\n      <h2>{{image.title}}</h2>\n      <img src=\"{{image.url}}\" >\n\n  </ul>\n</div>\n  ",
                         //Styles for the tag
-                        styles: ["\n.carousel{\n    overflow:hidden;\n    width:100%;\n}\n.slides{\n    list-style:none;\n    position:relative;\n    width:500%; /* Number of panes * 100% */\n    overflow:hidden; /* Clear floats */\n        /* Slide effect Animations*/\n    -moz-animation:carousel 30s infinite;\n    -webkit-animation:carousel 30s infinite;\n    animation:carousel 30s infinite;\n}\n.slides > li{\n    position:relative;\n    float:left;\n    width: 20%; /* 100 / number of panes */\n}\n.carousel img{\n    display:block;\n    width:100%;\n    max-width:100%;\n}\n.carousel h2{\n    margin-bottom: 0;\n    font-size:1em;\n    padding:1.5em 0.5em 1.5em 0.5em;\n    position:absolute;\n    right:0px;\n    bottom:0px;\n    left:0px;\n    text-align:center;\n    color:#fff;\n    background-color:rgba(0,0,0,0.75);\n    text-transform: uppercase;\n}\n\n@keyframes carousel{\n    0%    { left:-5%; }\n    11%   { left:-5%; }\n    12.5% { left:-105%; }\n    23.5% { left:-105%; }\n    25%   { left:-205%; }\n    36%   { left:-205%; }\n    37.5% { left:-305%; }\n    48.5% { left:-305%; }\n    50%   { left:-405%; }\n    61%   { left:-405%; }\n    62.5% { left:-305%; }\n    73.5% { left:-305%; }\n    75%   { left:-205%; }\n    86%   { left:-205%; }\n    87.5% { left:-105%; }\n    98.5% { left:-105%; }\n    100%  { left:-5%; }\n}\n  "],
+                        styles: ["\n.carousel{\n    overflow:hidden;\n    width:100%;\n}\n.slides{\n    list-style:none;\n    position:relative;\n    width:500%; /* Number of panes * 100% */\n    overflow:hidden; /* Clear floats */\n        /* Slide effect Animations*/\n    -moz-animation:carousel 30s infinite;\n    -webkit-animation:carousel 30s infinite;\n    animation:carousel 30s infinite;\n}\n.slides > li{\n    position:relative;\n    float:left;\n    width: 20%; /* 100 / number of panes */\n}\n.carousel img{\n    display:block;\n    width:100%;\n    max-width:100%;\n}\n\n@keyframes carousel{\n    0%    { left:-5%; }\n    11%   { left:-5%; }\n    12.5% { left:-105%; }\n    23.5% { left:-105%; }\n    25%   { left:-205%; }\n    36%   { left:-205%; }\n    37.5% { left:-305%; }\n    48.5% { left:-305%; }\n    50%   { left:-405%; }\n    61%   { left:-405%; }\n    62.5% { left:-305%; }\n    73.5% { left:-305%; }\n    75%   { left:-205%; }\n    86%   { left:-205%; }\n    87.5% { left:-105%; }\n    98.5% { left:-105%; }\n    100%  { left:-5%; }\n}\n  "],
                     }), 
                     __metadata('design:paramtypes', [])
                 ], CSSCarouselComponent);
@@ -40,11 +40,11 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             exports_1("CSSCarouselComponent", CSSCarouselComponent);
             //IMAGES array implementing Image interface
             IMAGES = [
-                { "title": "KungFu Panda 3", "url": "ImageApp/kfp3.jpg" },
-                { "title": "DEADPOOL", "url": "ImageApp/deadpool.jpg" },
-                { "title": "AVENGER 2", "url": "ImageApp/avenger2.jpg" },
-                { "title": "BATMAN V SUPERMAN", "url": "ImageApp/bvs.jpg" },
-                { "title": "Star Wars 7", "url": "ImageApp/sw7.jpg" }
+                { "url": "ImageApp/kfp3.jpg" },
+                { "url": "ImageApp/deadpool.jpg" },
+                { "url": "ImageApp/avenger2.jpg" },
+                { "url": "ImageApp/bvs.jpg" },
+                { "url": "ImageApp/sw7.jpg" }
             ];
         }
     }
